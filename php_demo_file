@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to PHP on AWS</title>
+</head>
+<body>
+    <h1>Welcome to PHP on AWS EC2!</h1>
+    <p>This is a simple PHP page running on an Apache web server.</p>
+    
+    <h2>Current Server Time:</h2>
+    <p><?php echo date('Y-m-d H:i:s'); ?></p>
+    
+    <h2>Server Information:</h2>
+    <ul>
+        <li><strong>PHP Version:</strong> <?php echo phpversion(); ?></li>
+        <li><strong>Server Software:</strong> <?php echo $_SERVER['SERVER_SOFTWARE']; ?></li>
+        <li><strong>Server Name:</strong> <?php echo $_SERVER['SERVER_NAME']; ?></li>
+        <li><strong>Server Address:</strong> <?php echo $_SERVER['SERVER_ADDR']; ?></li>
+        <li><strong>Client IP Address:</strong> <?php echo $_SERVER['REMOTE_ADDR']; ?></li>
+    </ul>
+</body>
+</html>
